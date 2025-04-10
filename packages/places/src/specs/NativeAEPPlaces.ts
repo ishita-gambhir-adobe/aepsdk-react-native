@@ -10,6 +10,8 @@ type CodegenPlacesLocation = {
   accuracy: number;
 };
 
+type metadataStringMap = { [key: string]: string };
+
 type CodegenPlacesPOI = {
   identifier: string;
   name: string;
@@ -19,7 +21,7 @@ type CodegenPlacesPOI = {
   userIsWithin: boolean;
   library: string;
   weight: number;
-  metadata: { [key: string]: string };
+  metadata: metadataStringMap;
 };
 
 type CodegenPlacesGeofence = {
@@ -29,13 +31,6 @@ type CodegenPlacesGeofence = {
   radius: number;
   expirationDuration: number;
 };
-
-type CodegenPlacesAuthStatus = 
-  'PLACES_AUTH_STATUS_ALWAYS' |
-  'PLACES_AUTH_STATUS_DENIED' |
-  'PLACES_AUTH_STATUS_RESTRICTED' |
-  'PLACES_AUTH_STATUS_UNKNOWN' |
-  'PLACES_AUTH_STATUS_WHEN_IN_USE';
 
 
 export interface Spec extends TurboModule {
@@ -57,7 +52,7 @@ export interface Spec extends TurboModule {
   
   clear: () => void;
   
-  setAuthorizationStatus: (authStatus?: CodegenPlacesAuthStatus) => void;
+  setAuthorizationStatus: (authStatus?: string) => void;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('AEPPlaces');
