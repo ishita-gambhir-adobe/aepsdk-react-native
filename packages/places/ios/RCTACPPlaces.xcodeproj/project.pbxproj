@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9282E8E7249099CA00C77F5A /* RCTAEPPlaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 9282E8E5249099CA00C77F5A /* RCTAEPPlaces.m */; };
+		9282E8E7249099CA00C77F5A /* RCTAEPPlaces.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9282E8E5249099CA00C77F5A /* RCTAEPPlaces.mm */; };
 		9282E8EA249099EE00C77F5A /* RCTAEPPlacesDataBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9282E8E9249099EE00C77F5A /* RCTAEPPlacesDataBridge.m */; };
 		A103BA861E1C070DE8F161AF /* libPods-RCTAEPPlaces.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50D61066B74B667AA4879F /* libPods-RCTAEPPlaces.a */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 		134814201AA4EA6300B7C361 /* libRCTAEPPlaces.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTAEPPlaces.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AAC776162841D3764972BC /* Pods-RCTAEPPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAEPPlaces.debug.xcconfig"; path = "Target Support Files/Pods-RCTAEPPlaces/Pods-RCTAEPPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		81DE6FB44F5C4C19974FD874 /* Pods-RCTAEPPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAEPPlaces.release.xcconfig"; path = "Target Support Files/Pods-RCTAEPPlaces/Pods-RCTAEPPlaces.release.xcconfig"; sourceTree = "<group>"; };
-		9282E8E5249099CA00C77F5A /* RCTAEPPlaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTAEPPlaces.m; path = src/RCTAEPPlaces.m; sourceTree = "<group>"; };
+		9282E8E5249099CA00C77F5A /* RCTAEPPlaces.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RCTAEPPlaces.mm; path = src/RCTAEPPlaces.mm; sourceTree = "<group>"; };
 		9282E8E6249099CA00C77F5A /* RCTAEPPlaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTAEPPlaces.h; path = src/RCTAEPPlaces.h; sourceTree = "<group>"; };
 		9282E8E8249099EE00C77F5A /* RCTAEPPlacesDataBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTAEPPlacesDataBridge.h; path = src/RCTAEPPlacesDataBridge.h; sourceTree = "<group>"; };
 		9282E8E9249099EE00C77F5A /* RCTAEPPlacesDataBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTAEPPlacesDataBridge.m; path = src/RCTAEPPlacesDataBridge.m; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				9282E8E8249099EE00C77F5A /* RCTAEPPlacesDataBridge.h */,
 				9282E8E9249099EE00C77F5A /* RCTAEPPlacesDataBridge.m */,
 				9282E8E6249099CA00C77F5A /* RCTAEPPlaces.h */,
-				9282E8E5249099CA00C77F5A /* RCTAEPPlaces.m */,
+				9282E8E5249099CA00C77F5A /* RCTAEPPlaces.mm */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				D2EDCC6E80D7D2985E5EAEE4 /* Pods */,
 				B82057A2272C406A95D5AD1E /* Frameworks */,
@@ -82,7 +82,6 @@
 				37AAC776162841D3764972BC /* Pods-RCTAEPPlaces.debug.xcconfig */,
 				81DE6FB44F5C4C19974FD874 /* Pods-RCTAEPPlaces.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RCTAEPPlaces" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RCTACPPlaces" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -169,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9282E8E7249099CA00C77F5A /* RCTAEPPlaces.m in Sources */,
+				9282E8E7249099CA00C77F5A /* RCTAEPPlaces.mm in Sources */,
 				9282E8EA249099EE00C77F5A /* RCTAEPPlacesDataBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +310,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RCTAEPPlaces" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RCTACPPlaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,

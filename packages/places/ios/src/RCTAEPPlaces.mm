@@ -10,7 +10,7 @@ REPRESENTATIONS OF ANY KIND, either express or implied. See the License for the
 specific language governing permissions and limitations under the License.
 */
 
-#import "AEPPlaces.h"
+#import "RCTAEPPlaces.h"
 #import "RCTAEPPlacesDataBridge.h"
 #import <CoreLocation/CoreLocation.h>
 
@@ -18,9 +18,9 @@ specific language governing permissions and limitations under the License.
 #import <AEPPlacesSpec/AEPPlacesSpec.h>
 #endif
 
-@import AEPPlaces;
+#import <AEPPlaces/AEPPlaces.h>
 
-@implementation AEPPlaces
+@implementation RCTAEPPlaces
 
 static NSString *const EXTENSION_NAME = @"AEPPlaces";
 

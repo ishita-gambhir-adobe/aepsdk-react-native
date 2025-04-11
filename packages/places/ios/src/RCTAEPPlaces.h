@@ -14,10 +14,10 @@ governing permissions and limitations under the License.
 
 #ifdef RCT_NEW_ARCH_ENABLED
 #import <AEPPlacesSpec/AEPPlacesSpec.h>
-@interface AEPPlaces: NSObject <NativeAEPPlacesSpec>
+@interface RCTAEPPlaces : NSObject <NativeAEPPlacesSpec>
 #else
 #import <React/RCTBridgeModule.h>
-@interface AEPPlaces : NSObject <RCTBridgeModule>
+@interface RCTAEPPlaces : NSObject <RCTBridgeModule>
 #endif
 
 @end
