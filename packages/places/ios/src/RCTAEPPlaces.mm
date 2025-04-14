@@ -18,7 +18,7 @@ specific language governing permissions and limitations under the License.
 #import <AEPPlacesSpec/AEPPlacesSpec.h>
 #endif
 
-#import <AEPPlaces/AEPPlaces.h>
+#import<AEPPlaces/AEPPlaces-Swift.h>
 
 @implementation RCTAEPPlaces
 

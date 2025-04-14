@@ -261,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37AAC776162841D3764972BC /* Pods-RCTAEPPlaces.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -273,6 +274,12 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/libs",
 					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fmodules",
+					"-fcxx-modules",
+					"-fno-exceptions",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTAEPPlaces;
@@ -286,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81DE6FB44F5C4C19974FD874 /* Pods-RCTAEPPlaces.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -298,6 +306,12 @@
 					"$(PROJECT_DIR)/libs",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fmodules",
+					"-fcxx-modules",
+					"-fno-exceptions",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTAEPPlaces;

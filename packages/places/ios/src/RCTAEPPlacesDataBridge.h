@@ -12,7 +12,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import <AEPPlaces/AEPPlaces.h>
+#import <AEPPlaces/AEPPlaces-Swift.h>
 
 @interface RCTAEPPlacesDataBridge : NSObject
 
