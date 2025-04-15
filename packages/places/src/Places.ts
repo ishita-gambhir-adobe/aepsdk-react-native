@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { NativeModules, Platform } from 'react-native';
+import { Platform } from 'react-native';
 import PlacesAuthStatus from './models/PlacesAuthStatus';
 import PlacesGeofence from './models/PlacesGeofence';
 import PlacesLocation from './models/PlacesLocation';
@@ -29,7 +29,7 @@ interface IPlaces {
   setAuthorizationStatus: (authStatus?: PlacesAuthStatus) => void;
 }
 
-const AEPPlaces: IPlaces = NativeModules.AEPPlaces;
+const AEPPlaces: IPlaces = require('./specs/NativeAEPPlaces').default;
 
 const Places: IPlaces = {
   /**
