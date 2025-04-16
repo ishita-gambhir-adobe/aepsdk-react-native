@@ -28,7 +28,7 @@
   },
   "codegenConfig": {
      "name": "AEPPlacesSpec",
-     "type": "all",
+     "type": "modules",
      "jsSrcsDir": "src/specs",
      "android": {
        "javaPackageName": "com.adobe.marketing.mobile.reactnative.places"
