@@ -29,7 +29,8 @@ interface IPlaces {
   setAuthorizationStatus: (authStatus?: PlacesAuthStatus) => void;
 }
 
-const AEPPlaces: IPlaces = NativeModules.AEPPlaces;
+const isTurboModuleEnabled = global.__turboModuleProxy != null;
+const AEPPlaces: IPlaces = isTurboModuleEnabled ? require('./specs/NativeAEPPlaces').default : NativeModules.AEPPlaces;
 
 const Places: IPlaces = {
   /**

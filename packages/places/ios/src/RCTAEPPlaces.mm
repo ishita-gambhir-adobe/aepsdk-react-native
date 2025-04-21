@@ -13,6 +13,11 @@ specific language governing permissions and limitations under the License.
 #import "RCTAEPPlaces.h"
 #import "RCTAEPPlacesDataBridge.h"
 #import <CoreLocation/CoreLocation.h>
+
+#ifdef RCT_NEW_ARCH_ENABLED
+#import <AEPPlacesSpec/AEPPlacesSpec.h>
+#endif
+
 @import AEPPlaces;
 
 @implementation RCTAEPPlaces
@@ -89,5 +94,11 @@ RCT_EXPORT_METHOD(getCurrentPointsOfInterest
     resolve(poiArray);
   }];
 }
+
+#ifdef RCT_NEW_ARCH_ENABLED
+  - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule: (const facebook::react::ObjCTurboModule::InitParams &)params {
+      return std::make_shared<facebook::react::NativeAEPPlacesSpecJSI>(params);
+    }
+#endif
 
 @end
