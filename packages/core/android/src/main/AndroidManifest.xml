@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.adobe.marketing.mobile.reactnative">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adobe.marketing.mobile.reactnative"
+    tools:node="replace">
 
     <application>
         <activity
@@ -8,6 +10,15 @@
         <receiver
             android:name="com.adobe.marketing.mobile.LocalNotificationHandler"
             android:exported="false" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <!-- This entry makes RCTAEPCoreInitializer discoverable. -->
+            <meta-data  android:name="com.adobe.marketing.mobile.reactnative.RCTAEPCoreInitializer"
+                android:value="androidx.startup" />
+        </provider>
     </application>
 </manifest>
   
