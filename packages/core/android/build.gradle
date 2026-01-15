@@ -42,6 +42,7 @@ repositories {
 dependencies {
     implementation "com.facebook.react:react-native:+"
     implementation platform("com.adobe.marketing.mobile:sdk-bom:[3.8.0,4.0.0)")
+    implementation "androidx.startup:startup-runtime:1.2.0"
     api "com.adobe.marketing.mobile:core"
     api "com.adobe.marketing.mobile:signal"
     api "com.adobe.marketing.mobile:identity"
